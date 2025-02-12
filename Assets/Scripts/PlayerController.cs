@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+    using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour
         // Normal movement
         UpdateVisualFeedback();
 
-        if (transform.position.y < -1000f) {
+        if (transform.position.y < -200f) {
             CheckpointManager.TeleportPlayerToCheckpoint(gameObject);
             if (CameraFollower)
                 CameraFollower.transform.position = gameObject.transform.position;

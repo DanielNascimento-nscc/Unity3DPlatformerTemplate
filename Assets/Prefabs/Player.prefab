@@ -92,8 +92,10 @@ MonoBehaviour:
   SquashAndStretchRecoverSpeed: 5
   maxStepClimbable: 2
   maxTraversableSlope: 40
+  maxGroundedSlope: 65
   slideSpeed: 42
   platformGripForce: 7.7
+  extraGroundingHeightCheck: 0.1
   stompDamage: 1
   airRotationSpeed: 0.38
   airAcceleration: 18
@@ -104,6 +106,7 @@ MonoBehaviour:
   - {x: 0, y: 17, z: 6}
   chainJumpWindow: 0.1
   jumpBufferTime: 0.17
+  groundedTimeBeforeJump: 0.12
   jumpAudio: {fileID: 0}
   landAudio: {fileID: 0}
   onJumpPerformed:
@@ -124,15 +127,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4bae2fdf1b14a4b8cd3547e8a7e0d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionAudioClip: {fileID: 0}
-  damageAudioClip: {fileID: 0}
-  deathAudioClip: {fileID: 0}
-  health: 20
+  collisionAudioClip: {fileID: 8300000, guid: 9aa90952c2f4d4e4e8327eae3f8f1969, type: 3}
+  damageAudioClip: {fileID: 8300000, guid: 3fb29c1bba77bc241b6773c798e74949, type: 3}
+  deathAudioClip: {fileID: 8300000, guid: 6d4c19a5bf6fae84ab67c917f37d9113, type: 3}
+  health: 5
   takesCollisionDamageFromRigidbodies: 0
   takesCollisionDamageFromStaticbodies: 0
   minCollisionDamageVelocity: 0.2
-  shouldRespawn: 1
-  respawnAfterSeconds: 1.5
+  shouldRespawn: -1
+  respawnAfterSeconds: 3
   ignoredCollisionTags: []
   damageFlashInterval: 0.1
   invulnerabilityDuration: 0.9
